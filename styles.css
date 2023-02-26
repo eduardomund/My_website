@@ -1,24 +1,220 @@
 body {
     margin: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #40514e;
 }
 
+
 h1 {
-    margin-top: 0;
+    margin: 50px auto 0;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #66BFBF;
+}
+
+    
+p {
+    line-height: 2;
+}
+
+    
+
+    /* If you pick a sike in pixels, it won't be dynamic, so it will not be affected when changing the 
+    preferences of the browser. Instead, you may want to set it in percentages, like 100% (16px).
+    In this case we'll chose 90/16 * 100 = 562.5%. A third way is to set it in 'em'. 1 em = 16px.
+    
+    But the fourth and most safe and updated way is to use the "rem" units. Because if when you use
+    % or em, despite that those are dynamic, which is good, there's the setback that it will
+    be added to the font-size of its parent division, which can be problematic.
+
+    */
+
+    /* The text-align center method centers every child of the element but it only works for inline-block
+     objects and for block
+     objects that extend
+     for the whole page. Let's
+    say taht the h1 tag here had only 10% width. Then, we would need to use other tool to center it, which is the margin:
+     */
+      /* width: 20%; */
+
+     /*  now  your h1 text is on the left */
+      /* margin: 0 auto;  */
+
+      /*Now your text is centered by using the auto value for right and left margins. Notice that
+     you could type 0 auto 0 auto instead. Remember that when setting the margins for some object, if you
+     specify one value only, it will be applied for all sides, 2 values - top and bottom/righ and left, 3
+     values - top/right and left/bottom, 4 values - one value for each side, clock-wisely */
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+    font-weight: bold;
+}
+
+a {
+    color: #11999E;
 }
 
 div {
-    background-color: #e4f9f5;
+    background-color: ;
+}
+
+.top-container {
+    background-color: #eaf6f6;
+    position: relative;
+    padding-top: 100px;
+    
 }
 
 .middle-container {
-    background-color: blue;
-    height: 200px;
-    width: 200px;
+    margin: 100px 0;
+
+}
+
+.firstPar {
+    width: 30%;
+    margin: auto;
 }
 
 .bottom-container {
-    background-color: red;
-    height: 200px;
-    width: 200px;
+    background-color: #66bfbf;
+    margin-top: 80px;
+    padding: 50px 0 20px;
+
 }
 
+.pro {
+    text-decoration: underline;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 50px;
+}
+
+.skill-row {
+    margin: 100px auto 100px;
+    text-align: left;
+    width: 50%;
+}
+
+/* Float is the property that makes the text wrapped around the image of its div. And clear property is used
+if we want some text, like the class: code-description in this example, not to be wrapped, just the <h1>. */
+
+.skill-img1 {
+    width: 25%;
+    height: 10rem;
+    float: left;
+    margin-right: 20px;
+}
+
+.skill-img2 {
+    height: 10rem;
+    width: 25%;
+    float: right;
+    margin-right: 20px;
+}
+
+/* .code-description {
+    clear: left;
+} */
+
+/* .bjj-description {
+    clear: right;
+} */
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+  }
+
+  .firstPar {
+    color: #40514e;
+  }
+
+  hr {
+    border-style: dotted none none none;
+    width: 4%;
+    border-width: 5px;
+    color: #eaf6f6;
+    margin: 100px auto;
+  }
+
+  .funny-msg {
+    width: 40%;
+    margin: 40px auto 60px;
+
+  }
+
+  /* .footer-link2 {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+  }
+
+  .footer-link {
+    color: #11999E;
+    text-decoration: none;
+    margin-top: 10px;
+  } */
+
+  .copyr {
+    color: #eaf6f6;
+    position: relative;
+    margin-top: 30px;
+    font-size: 0.75rem;
+    padding: 20px 0;
+  }
+
+
+a:hover {
+    color: #eaf6f6;
+
+}
+
+a {
+    color:#11999E;
+    position: relative;
+    margin: 10px 20px;
+    text-decoration: none;
+}
